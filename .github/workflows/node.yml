@@ -7,10 +7,11 @@ on:
 jobs:
   build:
     env:
-      CI: true ## will disable watch mode (tests)
+      ## will disable watch mode (tests)
+      CI: true 
     strategy:
       matrix: 
-        node-version: [ 14.x, 16.x, 18.x]
+        node-version: [ 14, 16, 18]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

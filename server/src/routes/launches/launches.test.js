@@ -22,15 +22,15 @@ describe("Launches API", () => {
 
   describe("Test POST /launches", () => {
     const completeLaunchData = {
-      mission: "USS Enterprise",
-      rocket: "Kepler-62 f",
-      target: "a blackhole,",
+      mission: "Cheese Moon",
+      rocket: "USS Enterprise",
+      target: "Kepler-62 f",
       launchDate: "January 19, 2099",
     };
     const launchDataWithoutDate = {
-      mission: "USS Enterprise",
-      rocket: "Kepler-62 f",
-      target: "a blackhole,",
+      mission: "Cheese Moon",
+      rocket: "USS Enterprise",
+      target: "Kepler-62 f",
     };
 
     test("It should respond with 201 created and match properties except date", async () => {
